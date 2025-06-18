@@ -1,0 +1,38 @@
+*{
+    
+    margin:0;
+    padding:0;
+}
+.container{
+    display:flex;
+    height:500px;
+    flex-direction: column;
+    justify-content:center;
+    align-items:center;
+}
+.child1{
+    border:2px solid black;
+    padding:60px;
+    width:300px;
+    background-color:orangered;
+    
+}
+.child2{
+    border:2px solid black;
+    padding: 60px;
+    width:300px;
+    background-color:white;
+    background-image:url('flag.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100px;
+    
+}
+.child3{
+    border:2px solid black;
+    padding:60px;
+    width: 300px;
+    background-color:green;
+    
+}
+

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            grid-template-columns: 100px 100px 100px 100px;
+            grid-template-rows: 100px 100px 100px 100px;
+            gap:10px;
+            display:grid;
+        }
+        .child.header{
+            border:2px solid black ;
+            background-color:red;
+            padding:10px;
+            grid-column: 1/5;
+        }
+        .child.side{
+            border:2px solid black ;
+            background-color:red;
+            padding:10px;
+            grid-row:2/4;
+        }.child.content{
+            border:2px solid black ;
+            background-color:red;
+            padding:10px;
+            grid-column: 2/5;
+            grid-row:2/4;
+        }.child.footer{
+            border:2px solid black ;
+            background-color:red;
+            padding:10px;
+            grid-column:1/5;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="child header"></div>
+        <div class="child side"></div>
+        <div class="child content"></div>
+        <div class="child footer"></div>
+        
+    </div>
+
+</body>
+</html>
