@@ -12,7 +12,9 @@ import './index.css'
 import LoginTemp from './pages/LoginTemp.jsx';
 // import Counter from './components/Counter.jsx';
 import Navbar from './components/Navbar.jsx';
+import Ref from './Hooks/Ref.jsx';
 import  { Route,Routes} from 'react-router-dom';
+import Reducer from './Hooks/Reducer.jsx';
 const App = () => {
   // <h1>Hello World</h1>
   var fruits = ["Pen", "Pencil", "Eraser"];
@@ -32,7 +34,7 @@ const App = () => {
       <Navbar/>
       <Routes>
         <Route path='/home' element={<Home items={fruits} users={user} />} />
-        <Route path='/about' element={<About/>}/>
+        <Route path='/about' element={<About items={fruits} users={user}/>}/>
         <Route path='/contact' element={<Contact/>} />
         <Route path='/skills' element={<Skills/>}/>
         <Route path='/hooks' element={<Hooks/>}/>
@@ -40,6 +42,8 @@ const App = () => {
         <Route path='/effect' element={<Effect/>}/>
         <Route path='/effect2' element={<Effect2/>}/>
         <Route path='/login' element={<LoginTemp/>}/>
+        <Route path='/ref' element={<Ref/>}/>
+        <Route path='/red' element={<Reducer/>}/>
       </Routes>
     </div>
   );
