@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Scroll Page</title>
+  <style>
+    .Sticky {
+      position: sticky;
+      top: 0;
+      background-color: yellow;
+      padding: 10px;
+      font-size: 24px;
+    }
+
+    .big-space {
+      height: 2000px; 
+      background: linear-gradient(white, lightblue);
+    }
+    .flex{
+        position:flex;
+    }
+    .relative{
+        position:relative;
+        border:2px solid black;
+        height:100px;
+    }
+    .absolute{
+        position:absolute;
+        border:2px solid black;
+        top:0px;
+        left:0px;
+        padding:10px;
+        
+    }
+  </style>
+</head>
+<body>
+    <div class="big-space">
+  <h1 class="Sticky">Sticky</h1>
+    <div>
+        <h1 class="flex">Flex</h1>
+  </div>
+  <div class="relative">
+    relative
+    <div class="absolute">Absolute</div>
+    
+  </div>
+  </div>
+</body>
+</html>
