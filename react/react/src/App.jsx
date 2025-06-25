@@ -10,11 +10,13 @@ import Effect from './Hooks/Effect.jsx';
 import Effect2 from './Hooks/Effect2.jsx';
 import './index.css'
 import LoginTemp from './pages/LoginTemp.jsx';
+import Todo from './components/Todo.jsx';
 // import Counter from './components/Counter.jsx';
 import Navbar from './components/Navbar.jsx';
 import Ref from './Hooks/Ref.jsx';
 import  { Route,Routes} from 'react-router-dom';
 import Reducer from './Hooks/Reducer.jsx';
+
 const App = () => {
   // <h1>Hello World</h1>
   var fruits = ["Pen", "Pencil", "Eraser"];
@@ -44,6 +46,9 @@ const App = () => {
         <Route path='/login' element={<LoginTemp/>}/>
         <Route path='/ref' element={<Ref/>}/>
         <Route path='/red' element={<Reducer/>}/>
+        <Route path='/todo' element={<Todo />} />
+
+        
       </Routes>
     </div>
   );

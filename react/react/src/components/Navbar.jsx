@@ -12,6 +12,7 @@ const Navbar = () => {
       <Link to="/hooks" className="Link">Hooks</Link>
       <Link to="/state" className="Link">State</Link>
       <Link to="/login" className="Link">Login</Link>
+      <Link to="/todo" className="Link">Todo</Link>
     </div>
   );
 };
